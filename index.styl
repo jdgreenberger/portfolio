@@ -6,7 +6,6 @@ html, body
   padding: 0
   font-family: 'Josefin Slab', serif
 
-// email icon, click popup
 .container
   position: absolute
   background-image: url('./assets/background.jpg')
@@ -47,7 +46,7 @@ html, body
       font-size: 20px
 
     .social-media
-      margin-top: 80px
+      margin-top: 12%
 
       a
         display: inline-block
@@ -105,3 +104,26 @@ html, body
     80% {opacity:0}
     100% {opacity:0}
 
+  .popup
+    visibility: hidden
+    border: 1px solid darkgrey
+    position: fixed
+    margin-top: -75px
+    margin-left: 200px
+    background: $white
+    border-radius: 5px
+    width: 30%
+    height: 50px
+    line-height: 50px
+    transition: all 0.5s ease-in-out
+
+    &:target
+      visibility: visible
+
+    .content
+      display: inline-block
+      overflow: auto
+
+
+    .close:hover
+      color: #06D85F
