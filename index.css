@@ -31,10 +31,10 @@ body {
 }
 .container .info .image {
   margin-top: 25px;
-  width: 100px;
-  height: 100px;
-  background-image: url("./assets/bio-pic.jpg");
-  border-radius: 50px;
+  width: 110px;
+  height: 110px;
+  background-image: url("./assets/bio-pic2.jpg");
+  border-radius: 55px;
 }
 .container .info .bio {
   margin-top: 45px;
@@ -50,7 +50,7 @@ body {
   display: inline-block;
 }
 .container .info .social-media a:not(:first-child) {
-  padding-left: 10%;
+  margin-left: 10%;
 }
 .container .info .social-media svg {
   width: 35px;
@@ -61,7 +61,6 @@ body {
   color: #0e1925;
   fill: #0e1925;
   transform: scale(1.25);
-  transition: background-color 0.25s, transform 0.25s ease-out;
 }
 .container .arrows {
   display: none;
@@ -184,5 +183,12 @@ body {
   }
   100% {
     opacity: 0;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .container .info {
+    width: 75%;
+    margin-left: 12.5%;
   }
 }
