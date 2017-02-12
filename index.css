@@ -188,7 +188,12 @@ body {
 /* Mobile */
 @media only screen and (max-width: 768px) {
   .container {
-    background-size: none;
+    z-index: -10;
+    background: url("./assets/background.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .container .info {
     width: 75%;
