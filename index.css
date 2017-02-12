@@ -33,7 +33,7 @@ body {
   margin-top: 25px;
   width: 110px;
   height: 110px;
-  background-image: url("./assets/bio-pic2.jpg");
+  background-image: url("./assets/bio-pic.jpg");
   border-radius: 55px;
 }
 .container .info .bio {
@@ -52,15 +52,16 @@ body {
 .container .info .social-media a:not(:first-child) {
   margin-left: 10%;
 }
-.container .info .social-media svg {
+.container .info .social-media a svg {
   width: 35px;
   height: 35px;
 }
-.container .info .social-media svg:hover {
+.container .info .social-media a svg:hover {
   border-radius: 100%;
   color: #0e1925;
   fill: #0e1925;
   transform: scale(1.25);
+  transition: background-color 0.25s, transform 0.25s ease-out;
 }
 .container .arrows {
   display: none;
@@ -107,20 +108,19 @@ body {
   }
 }
 .container .popup {
-  visibility: hidden;
   border: 1px solid #a9a9a9;
-  position: fixed;
-  margin-top: -75px;
-  margin-left: 200px;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 18.5%;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
   height: 50px;
   line-height: 50px;
-  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
 }
-.container .popup:target {
-  visibility: visible;
+.container .popup .active {
+  opacity: 1;
 }
 .container .popup .content {
   display: inline-block;
@@ -187,6 +187,9 @@ body {
 }
 /* Mobile */
 @media only screen and (max-width: 768px) {
+  .container {
+    background-size: none;
+  }
   .container .info {
     width: 75%;
     margin-left: 12.5%;
