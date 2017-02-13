@@ -63,12 +63,35 @@ body {
   transform: scale(1.25);
   transition: background-color 0.25s, transform 0.25s ease-out;
 }
+.container .projects {
+  background: #f4f2f2;
+  position: absolute;
+  top: 100vh;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+.container .projects .project {
+  margin-top: 10px;
+  display: inline-block;
+  float: left;
+  width: 33.333333333333336%;
+}
+.container .projects .project img {
+  border: 1px solid #a9a9a9;
+  border-bottom: 0px;
+  box-shadow: 2px 2px 5px;
+  margin-bottom: 25px;
+}
+.container .projects .project p {
+  margin-bottom: 25px;
+}
 .container .arrows {
-  display: none;
   margin-top: 40px;
   text-align: center;
 }
 .container .arrows svg {
+  cursor: pointer;
   width: 40px;
 }
 .container .arrows path {
@@ -187,14 +210,8 @@ body {
 }
 /* Mobile */
 @media only screen and (max-width: 768px) {
-  .container {
-    height: 120vh;
-    z-index: -10;
+  body {
     overflow-y: scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
   .container .info {
     width: 75%;
