@@ -265,38 +265,42 @@ body {
   body {
     overflow-y: scroll;
   }
-  .container .title {
+  .container .profile {
+    height: 100vh;
+  }
+  .container .profile .title {
     margin-top: 8%;
     font-size: 55px;
   }
-  .container .info {
+  .container .profile .info {
     margin-top: 8%;
     height: 70%;
     width: 75%;
     margin-left: 12.5%;
   }
-  .container .info .image {
+  .container .profile .info .image {
     margin-top: 10%;
   }
-  .container .info .bio {
+  .container .profile .info .bio {
     margin-top: 15%;
   }
-  .container .info .bio p {
+  .container .profile .info .bio p {
     margin-top: 20%;
   }
-  .container .info .secondary-bio {
+  .container .profile .info .secondary-bio {
     display: none;
   }
-  .container .info .social-media {
+  .container .profile .info .social-media {
     margin-top: 20%;
+  }
+  .container .profile .arrows {
+    display: none;
   }
   .container .projects .project {
     width: 100%;
   }
-  .container .projects .project img {
+  .container .projects .project img,
+  .container .projects .project img.large {
     width: 80%;
-  }
-  .container .arrows {
-    display: none;
   }
 }
