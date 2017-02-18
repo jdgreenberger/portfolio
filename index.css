@@ -275,6 +275,9 @@ body {
   .container .projects .project {
     width: 100%;
   }
+  .container .projects .project img {
+    background: rgba(0,0,0,0.5);
+  }
   .container .arrows {
     display: none;
   }
