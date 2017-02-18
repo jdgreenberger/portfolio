@@ -144,7 +144,7 @@ body {
   opacity: 1;
   right: 39.2%;
 }
-.container .projects .project .tdp {
+.container .projects .project .whereto {
   top: 15%;
   left: 20.3%;
 }
@@ -152,7 +152,7 @@ body {
   top: 30%;
   right: 20.3%;
 }
-.container .projects .project .whereto {
+.container .projects .project . {
   top: 60%;
   left: 20.3%;
 }
@@ -290,8 +290,11 @@ body {
   .container .info .social-media {
     margin-top: 20%;
   }
-  .container .projects {
-    display: none;
+  .container .projects .project {
+    width: 100%;
+  }
+  .container .projects .project img {
+    width: 80%;
   }
   .container .arrows {
     display: none;
