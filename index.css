@@ -85,6 +85,7 @@ body {
   width: 100%;
 }
 .container .projects .project {
+  color: #000;
   margin-top: 10px;
   display: inline-block;
   float: left;
@@ -317,8 +318,7 @@ body {
     width: 100%;
     height: 100%;
   }
-  .container .projects .project .detail p,
-  .container .projects .project .detail a {
+  .container .projects .project .detail p {
     font-weight: bold;
     letter-spacing: 0.5px;
     margin-left: 5px;
