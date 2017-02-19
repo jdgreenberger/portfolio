@@ -265,10 +265,15 @@ body {
   body {
     overflow-y: scroll;
   }
+  .container {
+    background-mobile: url("./assets/background.jpg");
+  }
   .container .profile {
     height: 100vh;
   }
   .container .profile .title {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 8%;
     font-size: 50px;
   }
@@ -282,16 +287,16 @@ body {
     margin-top: 10%;
   }
   .container .profile .info .bio {
-    margin-top: 15%;
+    margin-top: 10%;
   }
   .container .profile .info .bio p {
-    margin-top: 20%;
+    margin-top: 15%;
   }
   .container .profile .info .secondary-bio {
     display: none;
   }
   .container .profile .info .social-media {
-    margin-top: 20%;
+    margin-top: 15%;
   }
   .container .profile .arrows {
     display: none;
