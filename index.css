@@ -267,7 +267,7 @@ body {
   }
   .container {
     background-image: url("./assets/background-mobile.jpg");
-    background-size: 100% no-repeat;
+    background-size: auto;
   }
   .container .profile {
     height: 100vh;
